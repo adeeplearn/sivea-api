@@ -1,14 +1,14 @@
-### Sivea-api
+# Sivea-api
 Laravel 5.7 API that use the APIs resources. This is an API for Sivea polling app.
 
 
 ## Quick-start
 
-#Install Dependencies
-    composer install
+#### Install Dependencies
+    <pre>composer install</pre>
 
-#Run database migration
-    php artisan migrate
+#### Run database migration
+    <pre>php artisan migrate</pre>
 
-#Import dummies data
-    php artisan db:seed
+#### Import dummies data
+    <pre>php artisan db:seed</pre>
