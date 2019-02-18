@@ -17,7 +17,7 @@ class CreateDosensTable extends Migration
             $table->increments('id');
             $table->string('nama_dosen');
             $table->string('email')->unique();
-            $table->dateTime('last_login');
+            $table->dateTime('last_login')->nullable();
             $table->timestamps();
         });
     }
