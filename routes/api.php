@@ -16,3 +16,25 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+/*
+|--------------------------------------------------------------------------
+| Dosen Api Routes
+|--------------------------------------------------------------------------
+*/
+
+// List dosens
+Route::get('dosens', 'DosenController@index');
+
+// List single dosen
+Route::get('dosen/{id}', 'DosenController@show');
+
+// Create new dosen
+Route::post('dosen', 'DosenController@store');
+
+// Update dosen
+Route::put('dosen', 'DosenController@store');
+
+// Delete dosen
+Route::delete('dosen/{id}', 'DosenController@destroy');
